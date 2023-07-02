@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品紹介/やさしい植木鉢</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="css/base.css" rel="stylesheet" type="text/css" />
+  <link href="css/item.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/function.js"></script>
+  <!-- ファビコン -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <!-- slcik -->
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <!-- <link rel="stylesheet" href="css/item.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/item.js"></script>
+  <!-- style -->
+  <style type="text/css">
+    .price_en:before{content:"\0a5";}
+  </style>
+</head>
+<body>
+  <div id="container">
+  <!-- ヘッダー -->
+  <header>
+    <div class="header_box">
+      <h1 id="top"><a href="index.html"><img src="images/dare.png" alt="DevelopHomeロゴ" width="55%" height="60%"></a></h1>
+      <div id="nav-toggle">
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <!-- <p id="nav_text">MENU</p> -->
+        </div>
+      </div>
+      <div id="gloval-nav">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Category</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+        <div class="cart_icn">
+          <span class="material-symbols-outlined"><a href="cart.html">shopping_cart</a></span>
+        </div>
+        <div class="cart_value">
+          18
+        </div>
+      <form method="get" action="#" class="search_container">
+        <input type="text" size="25" placeholder="　キーワード検索">
+        <input type="submit" value="search">
+      </form>
+      <div class="rogin_icn">
+        <span class="material-symbols-outlined"><a href="rogin.html">person</a></span>
+      </div>
+    </div>
+  </header>
+  <!-- メイン -->
+  <main>
+    <!-- パンクズリスト -->
+    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="index.html">
+            <span itemprop="name">TOP</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="category.html">
+            <span itemprop="name">Category</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="bedlinen.html">
+            <span itemprop="name">観葉植物・雑貨</span>
+        </a>
+        <meta itemprop="position" content="3" />
+      </li>
+      <li itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="item1.html">
+            <span itemprop="name">やさしい植木鉢</span>
+        </a>
+        <meta itemprop="position" content="4" />
+      </li>
+    </ol>
+    <div class="box">
+      <!-- アイテムスライド -->
+      <div class="slider">
+        <div class="slick-img">
+          <img
+            src="images/item1_1.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="slick-img">
+          <img
+            src="images/item1_2.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="slick-img">
+          <img
+            src="images/item1_3.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+      </div>
+      <div class="thumbnail">
+        <div class="thumbnail-img">
+          <img
+            src="images/item1_1.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="thumbnail-img">
+          <img
+            src="images/item1_2.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="thumbnail-img">
+          <img
+            src="images/item1_3.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+      </div>
+      <!-- アイテムテキスト -->
+      <div class="item_title_box">
+        <ul class="item_title_list">
+          <ul class="icons">
+            <li class="item_icon">新着</li>
+          </ul>
+          <div class="item_title">やさしい植木鉢</div>
+        </ul>
+      </div>
+      <p class="color_c">カラー</p>
+        <div class="item_text_list">
+          <p class="price">
+            <span class="teika">
+              <span class="price_en">1,930円</span>
+            </span>
+          </p>
+        </div>
+        <div class="cart_button">
+          <form method="post" action="" target="_blank">
+              <span class="unit">個数</span>
+              <select name="units" class="rItemUnits">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+              </select>
+              <input value="買い物かごに入れる" type="submit" id="" data-timesale-id="" class="cart">
+          </form>
+        </div>
+        <p class="setumei">猫の手を借りた芸術的な植木鉢が登場しました。この鉢は、猫たちが自然な形状を作り上げた作品であり、いずれもワン・オブ・ア・カインドです。ただし、名前はまだありません。それぞれの植木鉢は、独自の美しさを持ち、あらゆるインテリアスタイルにマッチします。自由自在な形状と色合いは、植物を引き立て、発育を促します。この鉢は、おしゃれでユニークなインテリアアイテムをお求めの方にぴったりです。猫の手が生み出す美しさを手に入れてみませんか？</p>
+    </div>
+  </main>
+  <!-- フッター -->
+  <footer>
+    <div class="footer_box">
+      <h1 id="footer_rogo"><a href="index.html"><img src="images/dare_foot.png" alt="DAREロゴ" width="55%" height="70%"></a></h1>
+      <div class="sns_box">
+        <div class="sns_icn">
+          <div class="facebook"><a href="index.html"><img src="images/facebook_icn.png" width="30px" height="30px"></a></div>
+          <div class="insta"><a href="index.html"><img src="images/inst_icn.png" width="30px" height="30px"></a></div>
+          <div class="twiter"><a href="index.html"><img src="images/twiter_icn.png" width="30px" height="30px"></a></div>
+        </div>
+      </div>
+        <div class="info1">
+          <h2>企業情報</h2>
+          <a href="index.html">採用情報</a>
+          <a href="index.html">環境への取り組み</a>
+          <a href="index.html">社会貢献・地域活動</a>
+          <a href="index.html">お知らせ</a>
+        </div>
+        <div class="info2">
+          <h2>ポリシー</h2>
+          <a href="index.html">利用規約</a>
+          <a href="index.html">プライバシーポリシー</a>
+        </div>
+        <div class="info3">
+          <h2>お問い合わせ</h2>
+          <a href="index.html">お問い合わせ</a>
+          <a href="index.html">店舗情報</a>
+          <a href="index.html">ヘルプ</a>
+          <a href="index.html">0123-456-789</a>
+        </div>
+      </div>
+  </footer>
+</div>
+</body>
+</html>

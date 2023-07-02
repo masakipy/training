@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document *//* 
+=================================== */
+/* メインボックス */
+.box {
+  display: grid;
+  grid-template-columns: 50px 500px 50px 600px 1fr;
+  grid-template-rows: 107px 215px 100px 107px 230px 100px;
+  grid-template-areas: 
+  "..... aboutImg ..... abouttitle1 ...."
+  "..... aboutImg ..... aboutText1 ...."
+  "..... ..... ..... ..... ...."
+  "..... abouttitle2 ..... aboutImg2 ...."
+  "..... aboutText2 ..... aboutImg2 ...."
+  "..... ..... ..... ..... ....";
+  background-color: #ffffff;
+}
+.about_img {
+  grid-area: aboutImg;
+  padding-right: 20px;
+  border-right: 1px solid #8b8b8b
+}
+.about_img2 {
+  grid-area: aboutImg2;
+}
+.title1 {
+  grid-area: abouttitle1;
+  margin-top: 30px;
+  font-size: 33px;
+  font-weight: bold;
+  text-align: start;
+  font-family: 'Helvetica Neue', 'Open Sans', Arial, '游ゴシック体', 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, 'MS PGothic', 'ＭＳ Ｐゴシック', sans-serif;
+}
+.title2 {
+  grid-area: abouttitle2;
+  margin-top: 30px;
+  font-size: 33px;
+  font-weight: bold;
+  text-align: start;
+  font-family: 'Helvetica Neue', 'Open Sans', Arial, '游ゴシック体', 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, 'MS PGothic', 'ＭＳ Ｐゴシック', sans-serif;
+}
+.text_box {
+  grid-area: aboutText1;
+}
+.text_box2 {
+  grid-area: aboutText2;
+}
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  height: 100%;
+  margin-right: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, 'MS PGothic', 'ＭＳ Ｐゴシック', sans-serif;
+  line-height: 180%;
+}
+/* 共通設定 */
+/* * {
+  box-sizing: border-box;
+}
+a {
+  text-decoration:none; 
+}
+a:link {
+  color: #000;
+} */
+/* slick */
+
+
+/* z-index */
+.box {
+  z-index: 900;
+}
+.about_img{
+  z-index: 901;
+}

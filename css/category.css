@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document *//* 
+=================================== */
+/* メインボックス */
+.category_box {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-template-rows: 520px 100px 520px 100px;
+  grid-template-areas: 
+  "cate1 cate2 cate3 cate4"
+  "..... ..... ..... ....."
+  "cate5 cate6 cate7 cate8"
+  "..... ..... ..... .....";
+  background-color: #ffffff;
+}
+a {
+  text-decoration:none; 
+}
+p {
+  width: 100%;
+  height: 35px;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  text-align: center;
+  top: -90px;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px #000000;
+}
+.bed_linen {
+  grid-area: cate1;
+}
+.sofa {
+  grid-area: cate2;
+}
+.dining {
+  grid-area: cate3;
+}
+.light {
+  grid-area: cate4;
+}
+.storage {
+  grid-area: cate5;
+}
+.chair {
+  grid-area: cate6;
+}
+.goods {
+  grid-area: cate7;
+}
+.glass {
+  grid-area: cate8;
+}
+/* z-index */
+.category_box {
+  z-index: 905;
+}

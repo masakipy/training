@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document *//* 
+=================================== */
+/* メインボックス */
+* {
+  box-sizing: border-box;
+}
+.main_box {
+  display: grid;
+  grid-template-columns:  1000px 1fr;
+  grid-template-rows: 700px auto auto auto auto 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "slide slide"
+  "title1 title1"
+  "item1 item1"
+  "title2 title2"
+  "item2 item2"
+  "event1 ....."
+  "event1 text1"
+  "event1 text1"
+  "event1 ....."
+  "title3 title3"
+  "item3 item3";
+}
+/* slick */
+.slider {
+  grid-area: slide;
+  height: 100%;
+  width: 100%;
+}
+.slick-img img {
+  object-fit: cover;
+}
+/* NEW ITEM */
+.new_item {
+  grid-area: item1;
+  margin: 0 200px;
+  max-width: 1040px;
+}
+.new_item_title {
+  grid-area: title1;
+}
+.box {
+  margin: 15px;
+}
+.new_item_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 0 70px;
+}
+.new_item_list img {
+  width: 201px;
+  height: 201px;
+  object-fit: cover;
+}
+.new_item_list a {
+  text-decoration:none; 
+}
+.new_item_list a:link {
+  color: #000;
+}
+.item_names {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: #000;
+}
+.icons {
+  display: block;
+  width: 42px;
+  background-color: rgb(122, 122, 122);
+}
+.item_icon{
+  display: block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.price_en {
+  color: #000;
+}
+/* features */
+.features_box {
+  grid-area: item2;
+  margin: 0 200px;
+  max-width: 1040px;
+}
+.features_title {
+  grid-area: title2;
+}
+.features_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 0 70px;
+}
+.features_text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+/* インスピレーション */
+.back_img {
+  grid-area: event1;
+}
+.event_text {
+  grid-area: text1;
+	background-color: rgb(204, 255, 255);
+  width: 349px;
+  height: 349px;
+}
+#text1 {
+  position: absolute;
+  border-bottom: solid #000;
+  border-bottom-width: 3px;
+	font-size: 72px;
+  line-height: 150%;
+  text-shadow: 5px 5px 3px #ffffff;
+  left: 900px;
+}
+#event_text > strong {
+	font-size: 125px;
+}
+/* ランキング */
+.rankingi_title {
+  grid-area: title3;
+}
+.ranking_box {
+  grid-area: item3;
+  margin: 0 200px;
+  max-width: 1040px;
+}
+.ranking_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 0 70px;
+  counter-reset: rank;
+}
+.ranking_list a {
+  text-decoration:none; 
+}
+.ranking_list a:link {
+  color: #000;
+}
+.ranking_list li {
+  position: relative;
+}
+.ranking_list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.ranking_list li::before { /* ラベルと順位のスタイル */
+  counter-increment: rank;
+  content: counter(rank) " 位";
+  position: absolute;
+  padding: 8px 14px;
+  font-size: 1.2em;
+  color: #fff; /* 文字色 */
+  background: rgba(0,0,0,0.8); /* 背景色 */
+}
+.ranking_list img { /* 画像のスタイル */
+  width: 201px;
+  height: 201px;
+  object-fit: cover;
+}
+/* z-index */
+.main_box {
+  z-index: 0;
+}
+.event_text {
+  z-index: 903;
+}
+#text1 {
+  z-index: 904;
+}
+.back_img{
+  z-index: 903;
+}
+.color_box1{
+  z-index: 902;
+}
